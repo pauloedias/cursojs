@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embaixada</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    Digite seu país de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+    <script>
+        function verificar() {
+            var pais = window.document.getElementById('pais')
+            var paisr = pais.value
+            var nacionalidade = window.document.querySelector('div#resultado')
+            if (paisr == 'Brasil') {
+                nacionalidade.innerHTML = 'Você é Brasileiro!'
+            } else {
+                nacionalidade.innerHTML = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
