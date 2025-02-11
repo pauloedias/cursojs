@@ -8,8 +8,7 @@ function isNumero(n) {
         return true
     } else {
         return false
-    }
-
+    }  
 }
 
 function inLista(n, l) {
